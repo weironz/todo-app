@@ -1,7 +1,7 @@
 <?php
 // Redis Session 配置
 ini_set('session.save_handler', 'redis');
-ini_set('session.save_path', 'tcp://127.0.0.1:6379?prefix=todoapp_sess:');
+ini_set('session.save_path', 'tcp://172.16.0.57:6379?auth=123456&prefix=todoapp_sess_');
 ini_set('session.gc_maxlifetime', 3600);  // 1小时过期
 
 // 启动 Session
